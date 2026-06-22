@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PreLaunch | The App Testing Community</title>
+    <title>PreLaunch | For App Builders</title>
     <meta name="description"
-        content="Connect with real testers to validate your app, or get paid to test the newest apps. Join PreLaunch today.">
+        content="Connect with real testers to validate your app. Stop guessing and start validating with PreLaunch.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
                 @apply bg-surfaceLight/40 backdrop-blur-md border border-white/10;
             }
             .text-gradient {
-                @apply bg-clip-text text-transparent bg-gradient-to-r from-primaryLight to-accent;
+                @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-primaryLight;
             }
         }
         body {
@@ -67,7 +67,7 @@
     </style>
 </head>
 
-<body class="antialiased overflow-x-hidden selection:bg-primaryLight selection:text-white">
+<body class="antialiased overflow-x-hidden selection:bg-accent selection:text-white">
 
     <!-- Background Decoration -->
     <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
@@ -83,19 +83,19 @@
     <!-- Header -->
     <header class="fixed top-0 w-full z-50 glass border-b-0 border-white/5 transition-all duration-300" id="header">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2 cursor-pointer">
+            <a href="index.html" class="flex items-center gap-2 cursor-pointer">
                 <div
                     class="w-8 h-8 rounded-lg bg-gradient-to-br from-primaryLight to-accent flex items-center justify-center font-heading font-bold text-lg shadow-lg">
                     P</div>
                 <span class="font-heading font-bold text-xl tracking-wide">PreLaunch</span>
-            </div>
+            </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
                 <a href="testers.html" class="hover:text-white transition-colors">For Testers</a>
-                <a href="builders.html" class="hover:text-white transition-colors">For Builders</a>
+                <a href="builders.html" class="text-white font-semibold transition-colors">For Builders</a>
             </nav>
             <a href="#join"
                 class="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-sm font-medium transition-all hover:scale-105 active:scale-95">
-                Join Beta
+                Start Validating
             </a>
         </div>
     </header>
@@ -105,111 +105,35 @@
         <section
             class="relative pt-40 pb-20 px-6 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center text-center">
             <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primaryLight text-xs font-medium mb-8">
-                <span class="w-2 h-2 rounded-full bg-primaryLight animate-pulse"></span>
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 border border-accent/30 text-accent text-xs font-medium mb-8">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
                 Now accepting early access requests
             </div>
             <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight max-w-4xl mb-6">
-                Build Better Apps. <br>
-                <span class="text-gradient">Together.</span>
+                Stop guessing. <br>
+                <span class="text-gradient">Start validating.</span>
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-                The ultimate platform connecting real-world testers with visionary app builders. Get paid to test new
-                apps,
-                or validate your ideas and launch with confidence.
+                Get your app in the hands of real users across diverse devices and demographics before you ship. No need to buy phones or guess what users want.
             </p>
             <div class="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
                 <a href="#join"
-                    class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent hover:from-primaryLight hover:to-accent text-white font-semibold transition-all shadow-[0_0_30px_-5px_rgba(139,92,246,0.5)] hover:-translate-y-1">
+                    class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-accent to-primary hover:from-accent hover:to-primaryLight text-white font-semibold transition-all shadow-[0_0_30px_-5px_rgba(6,182,212,0.5)] hover:-translate-y-1">
                     Get Started
                 </a>
-                <a href="#testers"
-                    class="w-full sm:w-auto px-8 py-4 rounded-xl glass hover:bg-white/10 text-white font-semibold transition-all">
-                    Learn More
-                </a>
-            </div>
-        </section>
-
-        <!-- Value Prop: Testers -->
-        <section id="testers" class="py-20 px-6 max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="flex-1 space-y-6">
-                    <h2 class="text-primaryLight font-semibold tracking-wider text-sm uppercase">For Testers</h2>
-                    <h3 class="font-heading text-4xl md:text-5xl font-bold">Test apps. <br>Get rewarded.</h3>
-                    <p class="text-gray-400 text-lg leading-relaxed">
-                        Have you ever used an app with bugs everywhere? A well-tested app improves quality and makes
-                        lives better.
-                        Join our community to test upcoming apps and help eradicate bugs.
-                    </p>
-                    <ul class="space-y-4 pt-4">
-                        <li class="flex items-start gap-3">
-                            <div
-                                class="mt-1 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-primaryLight shrink-0">
-                                ✓</div>
-                            <div>
-                                <strong class="text-white block">Make Lives Better</strong>
-                                <span class="text-gray-400 text-sm">Help improve the apps we use every day so people
-                                    don't feel stressed.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div
-                                class="mt-1 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-primaryLight shrink-0">
-                                ✓</div>
-                            <div>
-                                <strong class="text-white block">Earn a Stipend</strong>
-                                <span class="text-gray-400 text-sm">Get paid a stipend when you help test apps that
-                                    become available.</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1 w-full grid grid-cols-2 gap-4">
-                    <div
-                        class="glass p-6 rounded-2xl flex flex-col items-center text-center gap-3 transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">📱
-                        </div>
-                        <h4 class="font-medium">Early Access</h4>
-                        <p class="text-xs text-gray-400">Try new apps before anyone else.</p>
-                    </div>
-                    <div
-                        class="glass p-6 rounded-2xl flex flex-col items-center text-center gap-3 transform hover:-translate-y-2 transition-transform duration-300 translate-y-6">
-                        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-xl">💸
-                        </div>
-                        <h4 class="font-medium">Get Paid</h4>
-                        <p class="text-xs text-gray-400">Earn rewards for quality feedback.</p>
-                    </div>
-                    <div
-                        class="glass p-6 rounded-2xl flex flex-col items-center text-center gap-3 transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-xl">🐛
-                        </div>
-                        <h4 class="font-medium">Hunt Bugs</h4>
-                        <p class="text-xs text-gray-400">Find critical issues and report them.</p>
-                    </div>
-                    <div
-                        class="glass p-6 rounded-2xl flex flex-col items-center text-center gap-3 transform hover:-translate-y-2 transition-transform duration-300 translate-y-6">
-                        <div class="w-12 h-12 rounded-full bg-yellow-500/20 flex items-center justify-center text-xl">🏆
-                        </div>
-                        <h4 class="font-medium">Build Rep</h4>
-                        <p class="text-xs text-gray-400">Become a top-tier trusted tester.</p>
-                    </div>
-                </div>
             </div>
         </section>
 
         <!-- Value Prop: Builders -->
-        <section id="builders" class="py-20 px-6 max-w-7xl mx-auto">
+        <section id="features" class="py-20 px-6 max-w-7xl mx-auto">
             <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
                 <div class="flex-1 space-y-6">
-                    <h2 class="text-accent font-semibold tracking-wider text-sm uppercase">For App Builders</h2>
-                    <h3 class="font-heading text-4xl md:text-5xl font-bold">Stop guessing. <br>Start validating.</h3>
+                    <h2 class="text-accent font-semibold tracking-wider text-sm uppercase">Why PreLaunch?</h2>
+                    <h3 class="font-heading text-4xl md:text-5xl font-bold">Real feedback. <br>Real results.</h3>
                     <p class="text-gray-400 text-lg leading-relaxed">
                         Are you a builder and you’re looking for real users to test your app or game? Imagine getting
                         feedback from the kinds of people that will eventually use your app, how valuable will that be
                         to you?
-                        <br><br>
-                        <strong class="text-white">No need to buy phones.</strong> Get your app in the hands of real
-                        users across diverse devices and demographics before you ship.
                     </p>
                     <ul class="space-y-4 pt-4">
                         <li class="flex items-start gap-3">
@@ -279,57 +203,36 @@
 
                 <div class="relative z-10 text-center space-y-6 mb-10">
                     <h2 class="font-heading text-3xl md:text-5xl font-bold">Ready to revolutionize testing?</h2>
-                    <p class="text-gray-400 text-lg">Join the waitlist today. We'll notify you the moment we launch.</p>
+                    <p class="text-gray-400 text-lg">Join the waitlist today. We'll notify you the moment we launch so you can start testing your apps.</p>
                 </div>
 
-                <!-- 
-                  Google Form Integration:
-                  Replace 'YOUR_GOOGLE_FORM_ACTION_URL' with the actual action URL from your Google Form.
-                  Replace 'entry.XXXXXX' and 'entry.YYYYYY' with the correct field names from the Google Form.
-                -->
                 <form
                     action="https://docs.google.com/forms/d/e/1FAIpQLSfV-0b8-tkn7V5MjcqHhBhYlHgzDlvXC1ig478hE2rMzKHZ7w/formResponse"
                     method="POST" target="hidden_iframe" onsubmit="submitted=true;"
                     class="relative z-10 max-w-lg mx-auto space-y-6">
 
-                    <div class="grid grid-cols-2 gap-4">
-                        <label
-                            class="block glass p-4 rounded-xl cursor-pointer hover:bg-white/5 transition-all border-white/10 has-[:checked]:border-primaryLight has-[:checked]:bg-primary/10 group">
-                            <input type="radio" name="entry.798086111" value="Tester" class="sr-only" checked>
-                            <span
-                                class="block text-center font-medium group-has-[:checked]:text-primaryLight text-gray-300">I
-                                test apps</span>
-                        </label>
-                        <label
-                            class="block glass p-4 rounded-xl cursor-pointer hover:bg-white/5 transition-all border-white/10 has-[:checked]:border-primaryLight has-[:checked]:bg-primary/10 group">
-                            <input type="radio" name="entry.798086111" value="App Builder" class="sr-only">
-                            <span
-                                class="block text-center font-medium group-has-[:checked]:text-primaryLight text-gray-300">I
-                                build apps</span>
-                        </label>
-                    </div>
+                    <input type="hidden" name="entry.798086111" value="App Builder">
 
                     <div class="relative space-y-2">
                         <input type="email" name="entry.1878104294" placeholder="Enter your email address" required
-                            class="w-full bg-surface/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-primaryLight focus:ring-1 focus:ring-primaryLight transition-all placeholder:text-gray-500">
+                            class="w-full bg-surface/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder:text-gray-500">
                         <p class="text-xs text-gray-400 text-left px-2">
-                            PS: To avoid spam, we recommend using an email alias like iCloud+ or DuckDuckGo.
+                            We'll only use your email to notify you when we're ready.
                         </p>
                     </div>
 
                     <button type="submit"
-                        class="w-full py-4 rounded-xl bg-gradient-to-r from-primary to-accent hover:from-primaryLight hover:to-accent text-white font-bold text-lg transition-all shadow-[0_0_20px_-5px_rgba(139,92,246,0.4)] hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.6)]">
+                        class="w-full py-4 rounded-xl bg-gradient-to-r from-accent to-primary hover:from-accent hover:to-primaryLight text-white font-bold text-lg transition-all shadow-[0_0_20px_-5px_rgba(6,182,212,0.4)] hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.6)]">
                         Join the Waitlist
                     </button>
                 </form>
 
-                <!-- Success Message (Hidden by default) -->
+                <!-- Success Message -->
                 <div id="success-message"
                     class="hidden text-center mt-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 font-medium">
                     🎉 Thanks for joining! We'll be in touch soon.
                 </div>
 
-                <!-- Hidden iframe to prevent page redirect on Google Form submission -->
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                     onload="if(submitted) { document.getElementById('success-message').classList.remove('hidden'); }"></iframe>
                 <script>var submitted = false;</script>
